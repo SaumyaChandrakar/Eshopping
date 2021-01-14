@@ -1,0 +1,145 @@
+<!-- sliding -->
+<html>
+<head>
+    <style>
+    * {
+        box-sizing: border-box;
+      }
+      
+      /* Create four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 16.5%;
+        padding: 9px;
+        height: 320px; /* Should be removed. Only for demonstration */
+       background-color:rgb(245, 242, 231);
+       border: 2px solid rgb(77, 20, 3);
+       padding: 2px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      div.desc {
+      padding: 10px;
+     text-align: center;
+     }
+     div.column img {
+  width: 190px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;  
+  padding-left: 10px;
+  padding-right: 20px;
+
+}
+ #cart
+{
+  display:block;
+  width: 40%;
+  height: 20%;
+  color:whitesmoke;
+} 
+    </style>
+</head>
+    <body>
+  
+<!-- <style>
+.mySlides {display:none;
+ padding-left:125px;
+ padding-right:50px;}
+</style>
+</head>-->
+
+<div class="container" style="max-width:1000px;">
+  <img class="mySlides" src="assets\img\slide1.jpg" style="width:1350px;height:350px;margin-top:90px;">
+ <!--  <img class="mySlides" src="assets\img\slide2.jpg" style="width:100%">
+  <img class="mySlides" src="assets\img\slide3.jpg" style="width:100%"> -->
+</div>
+ 
+<!--  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}   
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+} 
+</script>-->
+ 
+
+<!-- Deals of the day -->
+
+ <h3 style="font-style:oblique;font-weight: bold;font-size:30px;">Deals of the day</h3>
+ <div class="row">
+    <div class="column">
+     <img src="assets\img\top2.jpg" >
+     <div class="desc">
+      <p> TOP </p>
+        Price: <del> Rs 658</del><span> Rs 525</span> 
+        </div>
+        <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >   
+    </div>
+    <div class="column" >
+      <img src="assets\img\Realme.jpg" >
+      <div class="desc">
+          <p> WATCH</p>
+         <del>Price: Rs 2999</del> <span>  Rs 2600</span>
+         
+        </div> 
+      <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()"> 
+    </div>
+    <div class="column" >
+        <img src="assets\img\boAt Rockerz 255.jpg" >
+        <div class="desc">
+            <p> boAt Rockerz </p>
+           <del>Price: Rs 1577</del> <span> Rs 1200</span>
+        
+           </div> 
+        <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()"> 
+    </div>
+    <div class="column" >
+        <img src="assets\img\jeans2.jpg" >
+        <div class="desc">
+            <p> JEANS </p>
+           <del>Price: Rs 563</del> <span> Rs 480</span>
+           
+           </div> 
+        <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()"> 
+    </div>
+    <div class="column" >
+        <img src="assets\img\Moto one fusion plus.jpg" >
+        <div class="desc">
+         <p> MOTO ONE FUSION PLUS</p>
+            <del>Price: Rs 17999</del> <span> Rs 15000 </span>
+           
+           </div> 
+        <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()"> 
+      </div>
+      <div class="column" >
+        <img src="assets\img\Samsung.jpg" >
+        <div class="desc">
+            <p>Samsung watch</p>
+            <del>Price: Rs 20000</del> <span> Rs 18000</span>
+           
+            </div> 
+         <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+      </div>
+  </div>
+  <p>{{stat}}</p>
+</body>
+
+</html>
+
+ 

@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 7px;
+  overflow:visible;
+}
+
+li {
+ float:left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: rgb(245, 239, 239);
+  color:rgb(49, 24, 24);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .category:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .category {background-color: rgb(238, 204, 230);}
+
+</style>
+</head>
+<body>
+
+
+<ul style="background-color:whitesmoke;">
+  <li><a href="Home">Home</a></li>
+  <li>
+  <div class="dropdown">
+    <a class="category" href="Categories">Categories</a>
+    <div class="dropdown-content">
+      <a href="Clothing">Clothing</a>
+      <a href="Electronics">Electronics</a>
+      <a href="Accessories">Accessories</a>
+    </div>
+  </div>
+  </li>
+  <li><a href="Search">Search</a></li>
+  <li><a href="Cart">Cart</a></li>
+  <li style="float:right"><a href="login">Login</a></li>
+</ul>
+<nav>
+  <a routerLinkActive="active" routerLink="/Search"></a>
+  <a routerLinkActive="active" routerLink="/Cart"></a>
+</nav> 
+<router-outlet></router-outlet>
+
+</body>
+</html>

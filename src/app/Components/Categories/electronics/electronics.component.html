@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+}
+#cart
+{
+  display:block;
+  margin-left:50%;
+  margin-right:50%;
+  width: 30px;
+  height: 30px;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+}
+
+div.gallery img {
+  width: 50px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;color: rgb(48, 10, 109);font-style:italic;">Electronics</h1>
+<div class="gallery">
+    <img src="assets\img\Moto one fusion plus.jpg"  >
+    <div class="desc">Moto one fusion plus</div>
+  <div class="desc">Price: Rs 17999</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\Moto Z4.jpg" >
+    <div class="desc">Moto Z4</div> 
+  <div class="desc">Price: Rs 20000</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()">
+</div>
+
+<div class="gallery">
+    <img src="assets\img\OnePlus 8T.jpg"  >
+    <div class="desc">OnePlus 8T</div> 
+  <div class="desc">Price: Rs 47999</div>
+  <img id="cart" src="assets\img\cart_icon.png"  (click)="addtocart()">
+</div>
+
+<div class="gallery">
+    <img src="assets\img\Apple iPhone 11 pro.jpg" >
+    <div class="desc">Apple iPhone 11 pro</div>  
+  <div class="desc">Price: Rs 89999</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\boAt Rockerz 255.jpg" >
+    <div class="desc">boAt Rockerz 255</div>
+  <div class="desc">Price: Rs 1577</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\boAt Rockerz 450.jpg" >
+    <div class="desc">boAt Rockerz 450</div>
+  <div class="desc">Price: Rs 1599</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+
+</body>
+</html>
+
+

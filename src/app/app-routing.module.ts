@@ -1,6 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/Shared/header/header.component';
 import { NavigationComponent } from './Components/Shared/navigation/navigation.component';
@@ -10,29 +9,16 @@ import { AccessoriesComponent } from './Components/Categories/accessories/access
 import { ElectronicsComponent } from './Components/Categories/electronics/electronics.component';
 import { ShoppingCartComponent } from './Components/shopping-cart/shopping-cart.component';
 import { HomeComponent } from './home/home.component';
-import { AppRoutingModule } from './app-routing.module';
 
 
+const routes: Routes = [
+  { path: 'Home', component: HomeComponent },{path:'App',component:AppComponent},{path:'Cart',component:ShoppingCartComponent},{path:'Electronics',component:ElectronicsComponent},
+  {path:'Accessories',component:AccessoriesComponent},{path:'Clothing',component:ClothingComponent},{path:'Footer',component:FooterComponent},{path:'Navigation',component:NavigationComponent}
+  ,{path:'Header',component:HeaderComponent}
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    NavigationComponent,
-    FooterComponent,
-    ClothingComponent,
-    AccessoriesComponent,
-    ElectronicsComponent,
-    ShoppingCartComponent,
-    HomeComponent,
-   
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
- 
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppModule { }
+export class AppRoutingModule { }

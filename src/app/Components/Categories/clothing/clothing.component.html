@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+}
+#cart
+{
+  display:block;
+  margin-left:50%;
+  margin-right:50%;
+  width: 30px;
+  height: 30px;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+}
+
+div.gallery img {
+  width: 150px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;color: rgb(48, 10, 109);font-style:italic;">Clothing</h1>
+<div class="gallery">
+    <img src="assets\img\top.jpg"  >
+  <div class="desc">Price: Rs 349</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\top2.jpg" >
+  <div class="desc">Price: Rs 658</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()">
+</div>
+
+<div class="gallery">
+    <img src="assets\img\top3.jpg"  >
+  <div class="desc">Price: Rs 618</div>
+  <img id="cart" src="assets\img\cart_icon.png"  (click)="addtocart()">
+</div>
+
+<div class="gallery">
+    <img src="assets\img\top4.jpg" >
+  <div class="desc">Price: Rs 563</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\jeans1.jpg" >
+  <div class="desc">Price: Rs 563</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\jeans2.jpg" >
+  <div class="desc">Price: Rs 563</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\jeans3.jpg" >
+  <div class="desc">Price: Rs 563</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\jeans4.jpg" >
+  <div class="desc">Price: Rs 563</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\skirt1.jpg" >
+  <div class="desc">Price: Rs 563</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\skirt2.jpg" >
+  <div class="desc">Price: Rs 563</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\skirt3.jpg" >
+  <div class="desc">Price: Rs 563</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+
+<div class="gallery">
+    <img src="assets\img\skirt4.jpg" >
+  <div class="desc">Price: Rs 563</div>
+  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
+<p>{{stat}}</p>
+</body>
+</html>
+
+
