@@ -1,3 +1,4 @@
+<app-navigation></app-navigation>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +16,14 @@ div.gallery {
   margin-right:50%;
   width: 30px;
   height: 30px;
+}
+#quantity
+{
+  display:block;
+  margin-left:50%;
+  margin-right:50%;
+  width: 30px;
+  height: 20px;
 }
 
 div.gallery:hover {
@@ -41,6 +50,7 @@ div.desc {
     <img src="assets\img\Moto one fusion plus.jpg"  >
     <div class="desc">Moto one fusion plus</div>
   <div class="desc">Price: Rs 17999</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
 </div>
 
@@ -48,6 +58,7 @@ div.desc {
     <img src="assets\img\Moto Z4.jpg" >
     <div class="desc">Moto Z4</div> 
   <div class="desc">Price: Rs 20000</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()">
 </div>
 
@@ -55,6 +66,7 @@ div.desc {
     <img src="assets\img\OnePlus 8T.jpg"  >
     <div class="desc">OnePlus 8T</div> 
   <div class="desc">Price: Rs 47999</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png"  (click)="addtocart()">
 </div>
 
@@ -62,6 +74,7 @@ div.desc {
     <img src="assets\img\Apple iPhone 11 pro.jpg" >
     <div class="desc">Apple iPhone 11 pro</div>  
   <div class="desc">Price: Rs 89999</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
 </div>
 
@@ -69,6 +82,7 @@ div.desc {
     <img src="assets\img\boAt Rockerz 255.jpg" >
     <div class="desc">boAt Rockerz 255</div>
   <div class="desc">Price: Rs 1577</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
 </div>
 
@@ -76,6 +90,7 @@ div.desc {
     <img src="assets\img\boAt Rockerz 450.jpg" >
     <div class="desc">boAt Rockerz 450</div>
   <div class="desc">Price: Rs 1599</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
 </div>
 

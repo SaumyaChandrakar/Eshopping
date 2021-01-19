@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accessories.component.less']
 })
 export class AccessoriesComponent implements OnInit {
-
+ stat:any="ok";
   constructor() { }
 
   ngOnInit() {
   }
-
+  addtocart()
+  {
+    this.stat="added to cart";
+    
+  }
+ 
 }

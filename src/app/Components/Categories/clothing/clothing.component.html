@@ -1,4 +1,4 @@
-
+<app-navigation></app-navigation>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +16,14 @@ div.gallery {
   margin-right:50%;
   width: 30px;
   height: 30px;
+}
+#quantity
+{
+  display:block;
+  margin-left:50%;
+  margin-right:50%;
+  width: 30px;
+  height: 20px;
 }
 
 div.gallery:hover {
@@ -37,79 +45,53 @@ div.desc {
 </style>
 </head>
 <body>
+ 
     <h1 style="text-align: center;color: rgb(48, 10, 109);font-style:italic;">Clothing</h1>
+    <div>
 <div class="gallery">
     <img src="assets\img\top.jpg"  >
   <div class="desc">Price: Rs 349</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
 </div>
 
 <div class="gallery">
     <img src="assets\img\top2.jpg" >
   <div class="desc">Price: Rs 658</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()">
 </div>
 
 <div class="gallery">
     <img src="assets\img\top3.jpg"  >
   <div class="desc">Price: Rs 618</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png"  (click)="addtocart()">
 </div>
 
 <div class="gallery">
     <img src="assets\img\top4.jpg" >
   <div class="desc">Price: Rs 563</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
 </div>
 
 <div class="gallery">
     <img src="assets\img\jeans1.jpg" >
   <div class="desc">Price: Rs 563</div>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
 </div>
 
 <div class="gallery">
     <img src="assets\img\jeans2.jpg" >
   <div class="desc">Price: Rs 563</div>
+   <input type="number" id="quantity" name="quantity" min="1" max="5" >
   <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
+</div>
 </div>
 
-<div class="gallery">
-    <img src="assets\img\jeans3.jpg" >
-  <div class="desc">Price: Rs 563</div>
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
-</div>
-
-<div class="gallery">
-    <img src="assets\img\jeans4.jpg" >
-  <div class="desc">Price: Rs 563</div>
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
-</div>
-
-<div class="gallery">
-    <img src="assets\img\skirt1.jpg" >
-  <div class="desc">Price: Rs 563</div>
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
-</div>
-
-<div class="gallery">
-    <img src="assets\img\skirt2.jpg" >
-  <div class="desc">Price: Rs 563</div>
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
-</div>
-
-<div class="gallery">
-    <img src="assets\img\skirt3.jpg" >
-  <div class="desc">Price: Rs 563</div>
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
-</div>
-
-<div class="gallery">
-    <img src="assets\img\skirt4.jpg" >
-  <div class="desc">Price: Rs 563</div>
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
-</div>
-<p>{{stat}}</p>
+<br><p>{{stat}}</p>
 </body>
 </html>
 
