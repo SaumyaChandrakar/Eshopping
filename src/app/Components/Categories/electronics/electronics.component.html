@@ -8,6 +8,9 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 200px;
+  border-radius: 2px;
+  orientation: landscape;
+  background-color: rgb(245, 239, 239);
 }
 #cart
 {
@@ -31,11 +34,12 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 50px;
+  width: 150px;
   height: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 2px skyblue;
 }
 
 div.desc {
@@ -45,56 +49,27 @@ div.desc {
 </style>
 </head>
 <body>
+ 
     <h1 style="text-align: center;color: rgb(48, 10, 109);font-style:italic;">Electronics</h1>
-<div class="gallery">
-    <img src="assets\img\Moto one fusion plus.jpg"  >
-    <div class="desc">Moto one fusion plus</div>
-  <div class="desc">Price: Rs 17999</div>
-  <input type="number" id="quantity" name="quantity" min="1" max="5" >
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
-</div>
+   
+
+<div>
 
 <div class="gallery">
-    <img src="assets\img\Moto Z4.jpg" >
-    <div class="desc">Moto Z4</div> 
-  <div class="desc">Price: Rs 20000</div>
-  <input type="number" id="quantity" name="quantity" min="1" max="5" >
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()">
+  <p *ngFor="let y of obj">
+   <img id="img"   src= "assets\img\{{y.image }}"/>
+   <li style="text-align: center;">{{y.pname}}</li>
+   <li style="text-align: center;">Rs {{y.price}}</li>
+    <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" routerLink="/cart1">
+  </p> 
+ 
 </div>
-
-<div class="gallery">
-    <img src="assets\img\OnePlus 8T.jpg"  >
-    <div class="desc">OnePlus 8T</div> 
-  <div class="desc">Price: Rs 47999</div>
-  <input type="number" id="quantity" name="quantity" min="1" max="5" >
-  <img id="cart" src="assets\img\cart_icon.png"  (click)="addtocart()">
-</div>
-
-<div class="gallery">
-    <img src="assets\img\Apple iPhone 11 pro.jpg" >
-    <div class="desc">Apple iPhone 11 pro</div>  
-  <div class="desc">Price: Rs 89999</div>
-  <input type="number" id="quantity" name="quantity" min="1" max="5" >
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
-</div>
-
-<div class="gallery">
-    <img src="assets\img\boAt Rockerz 255.jpg" >
-    <div class="desc">boAt Rockerz 255</div>
-  <div class="desc">Price: Rs 1577</div>
-  <input type="number" id="quantity" name="quantity" min="1" max="5" >
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
-</div>
-
-<div class="gallery">
-    <img src="assets\img\boAt Rockerz 450.jpg" >
-    <div class="desc">boAt Rockerz 450</div>
-  <div class="desc">Price: Rs 1599</div>
-  <input type="number" id="quantity" name="quantity" min="1" max="5" >
-  <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" >
 </div>
 
 
+
+<span></span>
+  
 </body>
 </html>
 
